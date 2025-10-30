@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seyed Soheil Raeisossadati - Portfolio</title>
+    <title>Soheil Raeisossadati | CS & Music Student | AI Researcher</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -173,7 +173,7 @@
             font-size: 1.5rem;
         }
 
-        /* Fix navigation */
+        /* Enhanced Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -181,42 +181,105 @@
             right: 0;
             z-index: 50;
             backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
         /* Add padding to account for fixed nav */
         body {
             padding-top: 4rem;
         }
+
+        /* Active nav link */
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2563eb;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <!-- Enhanced Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm" id="navbar">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <a href="#" class="text-2xl font-bold text-primary">Portfolio</a>
+                <!-- Logo/Brand with Icon -->
+                <a href="#home" class="flex items-center space-x-2 group">
+                    <div class="bg-gradient-to-r from-primary to-secondary p-2 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-code text-white text-xl"></i>
+                    </div>
+                    <span class="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Soheil Raeisossadati
+                    </span>
+                </a>
+
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-dark hover:text-primary transition">Home</a>
-                    <a href="#about" class="text-dark hover:text-primary transition">About</a>
-                    <a href="#experience" class="text-dark hover:text-primary transition">Experience</a>
-                    <a href="#skills" class="text-dark hover:text-primary transition">Skills</a>
-                    <a href="#projects" class="text-dark hover:text-primary transition">Projects</a>
-                    <a href="#contact" class="text-dark hover:text-primary transition">Contact</a>
+                    <a href="#home" class="nav-link text-dark hover:text-primary transition font-medium">
+                        <i class="fas fa-home mr-1"></i>Home
+                    </a>
+                    <a href="#about" class="nav-link text-dark hover:text-primary transition font-medium">
+                        <i class="fas fa-user mr-1"></i>About
+                    </a>
+                    <a href="#experience" class="nav-link text-dark hover:text-primary transition font-medium">
+                        <i class="fas fa-briefcase mr-1"></i>Experience
+                    </a>
+                    <a href="#skills" class="nav-link text-dark hover:text-primary transition font-medium">
+                        <i class="fas fa-tools mr-1"></i>Skills
+                    </a>
+                    <a href="#contact" class="nav-link text-dark hover:text-primary transition font-medium">
+                        <i class="fas fa-envelope mr-1"></i>Contact
+                    </a>
                 </div>
-                <button class="md:hidden text-dark" onclick="toggleMenu()">
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-dark hover:text-primary transition-colors" onclick="toggleMenu()">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
+
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="container mx-auto px-4 py-4 space-y-4">
-                <a href="#home" class="block text-dark hover:text-primary transition">Home</a>
-                <a href="#about" class="block text-dark hover:text-primary transition">About</a>
-                <a href="#experience" class="block text-dark hover:text-primary transition">Experience</a>
-                <a href="#skills" class="block text-dark hover:text-primary transition">Skills</a>
-                <a href="#projects" class="block text-dark hover:text-primary transition">Projects</a>
-                <a href="#contact" class="block text-dark hover:text-primary transition">Contact</a>
+                <a href="#home" class="flex items-center space-x-2 text-dark hover:text-primary transition p-2 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-home w-6"></i>
+                    <span class="font-medium">Home</span>
+                </a>
+                <a href="#about" class="flex items-center space-x-2 text-dark hover:text-primary transition p-2 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-user w-6"></i>
+                    <span class="font-medium">About</span>
+                </a>
+                <a href="#experience" class="flex items-center space-x-2 text-dark hover:text-primary transition p-2 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-briefcase w-6"></i>
+                    <span class="font-medium">Experience</span>
+                </a>
+                <a href="#skills" class="flex items-center space-x-2 text-dark hover:text-primary transition p-2 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-tools w-6"></i>
+                    <span class="font-medium">Skills</span>
+                </a>
+                <a href="#contact" class="flex items-center space-x-2 text-dark hover:text-primary transition p-2 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-envelope w-6"></i>
+                    <span class="font-medium">Contact</span>
+                </a>
             </div>
         </div>
     </nav>
