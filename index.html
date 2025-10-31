@@ -411,7 +411,7 @@
     </div>
 </div>
 
-<!-- Experience Section -->
+<!-- Experience Section with Collapsible Cards -->
 <div class="mb-16 max-w-6xl mx-auto" id="experience">
     <h3 class="section-title">Experience</h3>
     <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto text-lg tracking-wide">Professional Journey and Research Work</p>
@@ -419,7 +419,8 @@
     <div class="space-y-6">
         <!-- 1. World Youth Festival 2025 -->
         <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-blue-100">
-            <div class="flex justify-between items-start mb-4">
+            <!-- Main Content (Always Visible) -->
+            <div class="flex justify-between items-start mb-3">
                 <div class="flex-1">
                     <h4 class="text-xl font-bold text-gray-800 mb-1">International Youth Forum Participation</h4>
                     <h5 class="text-lg font-semibold text-primary">World Youth Festival 2025</h5>
@@ -432,66 +433,73 @@
                 <span>Nizhny Novgorod, Russia</span>
             </div>
             
+            <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                Selected as a national delegate representing Iran, I joined young leaders, innovators, and professionals from around the world to exchange ideas and shape conversations about the future of technology and digital transformation.
+            </p>
+            
             <p class="text-gray-700 leading-relaxed text-sm mb-4">
-                Selected as a national delegate representing Iran, engaging with global leaders in AI-driven creativity, digital transformation, and intercultural collaboration.
+                Throughout the event, I actively engaged in international panels and discussions exploring AI-driven creativity, digital transformation, and intercultural collaboration.
             </p>
 
-            <!-- Collapsible Content -->
+            <!-- Expandable Details -->
             <div class="experience-details hidden" id="exp1-details">
-                <div class="space-y-4 mt-4">
+                <div class="border-t border-blue-200 pt-4 mt-4 space-y-4">
                     <!-- Key Sessions -->
-                    <div class="bg-white/70 rounded-xl p-4">
-                        <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                    <div class="bg-white/70 rounded-xl p-5">
+                        <h6 class="font-bold text-gray-800 mb-3 flex items-center">
                             <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
                             Key Sessions:
                         </h6>
                         <ul class="space-y-2 text-gray-700 text-sm">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span><strong>Digital Sovereignty</strong> — National digital resilience strategies</span>
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Digital Sovereignty</strong> — Architectures and strategies for national digital resilience</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span><strong>City 2030: AI vs Human Habits</strong> — AI's impact on society and ethics</span>
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>City 2030: AI vs Human Habits</strong> — Examining AI's transformative impact on behavior, society, and ethics</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span><strong>Visual Communication Evolution</strong> — AR, VR, metaverse, and digital twins</span>
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>The Evolution of Visual Communication</strong> — Exploring AR, VR, the metaverse, and digital twins</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span><strong>Supercomputers & Computing</strong> — 6G, large-scale AI advancement</span>
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Supercomputers & New Computing Capabilities</strong> — Advancing 6G, large-scale AI, and the human–machine balance</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span><strong>Cybersecurity and AI</strong> — Legal frameworks for zettascale computing</span>
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Cybersecurity and AI</strong> — Developing legal frameworks for zettascale computing</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span><strong>Digital Technologies in Education</strong> — Transforming learning</span>
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Digital Technologies in Education</strong> — Transforming learning through emerging technologies</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Pitch Session -->
-                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-100">
-                        <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-5 border border-purple-100">
+                        <h6 class="font-bold text-gray-800 mb-2 flex items-center">
                             <i class="fas fa-microphone text-purple-500 mr-2"></i>
-                            Pitch Presentation:
+                            Pitch Session Presentation:
                         </h6>
                         <p class="text-gray-700 leading-relaxed text-sm">
-                            Presented <strong>Music AI project</strong> — using AI to preserve endangered Persian musical traditions.
+                            Presented my ongoing <strong>Music AI project</strong> — a research initiative that uses AI to preserve endangered Persian musical traditions.
                         </p>
                     </div>
 
-                    <!-- Impact -->
-                    <div class="bg-green-50 rounded-xl p-4 border border-green-100">
-                        <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                    <!-- Impact & Skills -->
+                    <div class="bg-green-50 rounded-xl p-5 border border-green-100">
+                        <h6 class="font-bold text-gray-800 mb-2 flex items-center">
                             <i class="fas fa-star text-green-500 mr-2"></i>
-                            Impact & Skills:
+                            Impact & Skills Developed:
                         </h6>
-                        <p class="text-gray-700 leading-relaxed text-sm">
-                            Enhanced expertise in AI-driven creativity, networking, international collaboration, and cross-cultural communication while building meaningful friendships across diverse cultures.
+                        <p class="text-gray-700 leading-relaxed text-sm mb-3">
+                            This cross-cultural experience deepened my expertise in AI-driven creativity and digital transformation, while enhancing essential skills in networking, international collaboration, research, and cross-cultural communication.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-sm italic">
+                            Beyond the formal sessions, the most enriching aspect of this journey was building new friendships and engaging in meaningful exchanges of ideas with people from diverse cultures — all united by a shared vision for creating a better world.
                         </p>
                     </div>
                 </div>
@@ -499,15 +507,16 @@
 
             <!-- Toggle Button -->
             <button onclick="toggleExperience('exp1')" 
-                    class="mt-4 text-primary hover:text-secondary font-semibold text-sm flex items-center transition-colors group">
-                <span class="exp1-toggle-text">Read More</span>
-                <i class="fas fa-chevron-down ml-2 exp1-toggle-icon transition-transform"></i>
+                    class="mt-4 w-full flex items-center justify-center space-x-2 px-4 py-2 bg-white hover:bg-blue-50 rounded-lg text-primary hover:text-secondary font-semibold transition-all border border-blue-200 group">
+                <span class="exp1-toggle-text">Show More Details</span>
+                <i class="fas fa-chevron-down exp1-toggle-icon transition-transform group-hover:translate-y-1"></i>
             </button>
         </div>
 
         <!-- 2. Perplexity Campus Partner -->
         <div class="bg-gradient-to-br from-indigo-50 to-cyan-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-indigo-100">
-            <div class="flex justify-between items-start mb-4">
+            <!-- Main Content (Always Visible) -->
+            <div class="flex justify-between items-start mb-3">
                 <div class="flex-1">
                     <h4 class="text-xl font-bold text-gray-800 mb-1">Perplexity Campus Partner</h4>
                     <h5 class="text-lg font-semibold text-primary">Student Ambassador Program</h5>
@@ -533,125 +542,370 @@
             </div>
 
             <p class="text-gray-700 leading-relaxed text-sm mb-4">
-                Selected among top global applicants to promote <strong>Comet</strong> AI browser and AI-driven innovation within the academic community.
+                Selected among top global applicants to represent <strong>Perplexity AI</strong> as a Campus Partner for the Fall 2025 cohort, promoting AI-driven innovation and knowledge tools within the academic community.
             </p>
 
-            <!-- Collapsible Content -->
+            <!-- Expandable Details -->
             <div class="experience-details hidden" id="exp2-details">
-                <div class="space-y-4 mt-4">
+                <div class="border-t border-indigo-200 pt-4 mt-4 space-y-4">
                     <!-- Responsibilities -->
-                    <div class="bg-white/70 rounded-xl p-4">
-                        <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                    <div class="bg-white/70 rounded-xl p-5">
+                        <h6 class="font-bold text-gray-800 mb-3 flex items-center">
                             <i class="fas fa-tasks text-indigo-500 mr-2"></i>
                             Key Responsibilities:
                         </h6>
                         <ul class="space-y-2 text-gray-700 text-sm">
                             <li class="flex items-start">
-                                <i class="fas fa-rocket text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span>Promoting Comet browser to students</span>
+                                <i class="fas fa-rocket text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Promoting <strong>Comet</strong>, Perplexity's next-generation agentic AI browser, and introducing it to students at the University of Tehran</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-users text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span>Engaging community through workshops and campaigns</span>
+                                <i class="fas fa-users text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Engaging the academic community in exploring AI-driven research and knowledge tools through workshops, outreach, and creative campaigns</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-handshake text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span>Collaborating on marketing and product feedback</span>
+                                <i class="fas fa-handshake text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Collaborating directly with the Perplexity team on marketing challenges, product feedback, and referral initiatives to expand brand presence</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-lightbulb text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                <span>Fostering ethical AI adoption awareness</span>
+                                <i class="fas fa-chart-line text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Developing outreach, communication, and growth strategies to expand Perplexity's presence in academic environments</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-primary mt-1 mr-2 flex-shrink-0"></i>
+                                <span>Fostering awareness of ethical AI adoption and responsible technology use among students and faculty</span>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Skills & Impact Combined -->
+                    <!-- Recognition & Impact -->
                     <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-100">
+                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 border border-yellow-100">
                             <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
                                 <i class="fas fa-award text-yellow-500 mr-2"></i>
-                                Recognition:
+                                Benefits & Recognition:
                             </h6>
-                            <p class="text-gray-700 text-sm">1-year Perplexity Pro + early Comet access</p>
+                            <p class="text-gray-700 text-sm">Received <strong>1-year Perplexity Pro membership</strong> and early access to <strong>Comet</strong> for research and promotion purposes</p>
                         </div>
                         <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
                             <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
                                 <i class="fas fa-bullseye text-blue-500 mr-2"></i>
                                 Impact:
                             </h6>
-                            <p class="text-gray-700 text-sm">Bridging AI innovation with academic community</p>
+                            <p class="text-gray-700 text-sm">Successfully bridging the gap between cutting-edge AI innovation and the academic community at the University of Tehran</p>
                         </div>
                     </div>
 
                     <!-- Skills Tags -->
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Community Engagement</span>
-                        <span class="px-2 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Digital Communication</span>
-                        <span class="px-2 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Innovation Strategy</span>
-                        <span class="px-2 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Leadership</span>
+                    <div class="bg-green-50 rounded-xl p-4 border border-green-100">
+                        <h6 class="font-bold text-gray-800 mb-3 flex items-center text-sm">
+                            <i class="fas fa-chart-line text-green-500 mr-2"></i>
+                            Skills Developed:
+                        </h6>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Community Engagement</span>
+                            <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Digital Communication</span>
+                            <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Innovation Strategy</span>
+                            <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Leadership</span>
+                            <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Strategic Communication</span>
+                            <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Technology Advocacy</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Toggle Button -->
             <button onclick="toggleExperience('exp2')" 
-                    class="mt-4 text-primary hover:text-secondary font-semibold text-sm flex items-center transition-colors group">
-                <span class="exp2-toggle-text">Read More</span>
-                <i class="fas fa-chevron-down ml-2 exp2-toggle-icon transition-transform"></i>
+                    class="mt-4 w-full flex items-center justify-center space-x-2 px-4 py-2 bg-white hover:bg-indigo-50 rounded-lg text-primary hover:text-secondary font-semibold transition-all border border-indigo-200 group">
+                <span class="exp2-toggle-text">Show More Details</span>
+                <i class="fas fa-chevron-down exp2-toggle-icon transition-transform group-hover:translate-y-1"></i>
             </button>
         </div>
 
-        <!-- 3. Research Experience -->
-        <div class="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-teal-100">
-            <div class="flex justify-between items-start mb-4">
-                <div class="flex-1">
-                    <h4 class="text-xl font-bold text-gray-800 mb-1">Research Experience</h4>
-                    <h5 class="text-lg font-semibold text-primary">Computational Biology Research</h5>
+<!-- 3. Research Experience -->
+<div class="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-teal-100">
+    <!-- Main Content (Always Visible) -->
+    <div class="flex justify-between items-start mb-3">
+        <div class="flex-1">
+            <h4 class="text-xl font-bold text-gray-800 mb-1">Research Experience</h4>
+            <h5 class="text-lg font-semibold text-primary">When Math Meets Life: Unraveling the Secrets of Biology Through Computation</h5>
+        </div>
+        <span class="text-gray-500 text-xs bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap ml-4">Fall 2024</span>
+    </div>
+    
+    <p class="text-gray-700 leading-relaxed text-sm mb-4">
+        <i class="fas fa-microscope text-teal-600 mr-2"></i>
+        The study explores the integration of mathematics and computer science with biology to address complex biological challenges.
+    </p>
+
+    <!-- Expandable Details -->
+    <div class="experience-details hidden" id="exp3-details">
+        <div class="border-t border-teal-200 pt-4 mt-4 space-y-4">
+            <!-- Methodologies & Findings -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white/70 rounded-xl p-4">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-flask text-teal-500 mr-2"></i>
+                        Key Methodologies:
+                    </h6>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                            <span><strong>Stochastic Models</strong> — Capturing randomness in biological processes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                            <span><strong>Machine Learning Techniques</strong> — Particularly CNNs and perceptrons for analyzing large biological datasets</span>
+                        </li>
+                    </ul>
                 </div>
-                <span class="text-gray-500 text-xs bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap ml-4">Fall 2024</span>
+                <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-lightbulb text-blue-500 mr-2"></i>
+                        Noteworthy Findings:
+                    </h6>
+                    <p class="text-gray-700 text-sm">The effectiveness of the <strong>AlphaFold model</strong> in predicting protein folding using deep learning, enhancing understanding of protein structures crucial for functions and disease insights</p>
+                </div>
             </div>
-            
-            <p class="text-gray-700 leading-relaxed text-sm mb-4">
-                <i class="fas fa-microscope text-teal-600 mr-2"></i>
-                Exploring the integration of mathematics and computer science with biology to address complex biological challenges.
-            </p>
 
-            <!-- Collapsible Content -->
-            <div class="experience-details hidden" id="exp3-details">
-                <div class="space-y-4 mt-4">
-                    <!-- Methodologies & Findings -->
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-white/70 rounded-xl p-4">
-                            <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
-                                <i class="fas fa-flask text-teal-500 mr-2"></i>
-                                Methodologies:
-                            </h6>
-                            <ul class="space-y-1 text-gray-700 text-sm">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                    <span>Stochastic Models</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0 text-xs"></i>
-                                    <span>CNNs & Perceptrons</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
-                            <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
-                                <i class="fas fa-lightbulb text-blue-500 mr-2"></i>
-                                Key Finding:
-                            </h6>
-                            <p class="text-gray-700 text-sm">AlphaFold's effectiveness in protein folding prediction</p>
-                        </div>
-                    </div>
+            <!-- Research Impact & Limitations -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-purple-50 rounded-xl p-4 border border-purple-100">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-star text-purple-500 mr-2"></i>
+                        Research Impact:
+                    </h6>
+                    <p class="text-gray-700 text-sm">The synergy between mathematics, computer science, and biology is emphasized as essential for advancing biomedical research and understanding of life sciences</p>
+                </div>
+                <div class="bg-orange-50 rounded-xl p-4 border border-orange-100">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i>
+                        Limitations:
+                    </h6>
+                    <p class="text-gray-700 text-sm">Reliance on computational resources for data-driven modeling</p>
+                </div>
+            </div>
 
-                    <!-- Publication -->
-                    <div class="pt-3 border-t border-gray-200">
-                        <a href="https://doi.org/10.5281/zenodo.15804888" 
-                           target="_blank"
-                           class="inline-flex items-center text-sm text-teal-600 hover:
-                            
+            <!-- Publication Link -->
+            <div class="pt-3 border-t border-gray-200">
+                <a href="https://doi.org/10.5281/zenodo.15804888" 
+                   target="_blank"
+                   class="inline-flex items-center px-4 py-2 bg-white hover:bg-teal-50 rounded-lg text-teal-600 hover:text-teal-700 font-semibold transition-all border border-teal-200 group">
+                    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.15804888.svg"
+                         alt="DOI Badge"
+                         class="h-6 group-hover:scale-105 transition-transform"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button onclick="toggleExperience('exp3')" 
+            class="mt-4 w-full flex items-center justify-center space-x-2 px-4 py-2 bg-white hover:bg-teal-50 rounded-lg text-primary hover:text-secondary font-semibold transition-all border border-teal-200 group">
+        <span class="exp3-toggle-text">Show More Details</span>
+        <i class="fas fa-chevron-down exp3-toggle-icon transition-transform group-hover:translate-y-1"></i>
+    </button>
+</div>
+
+<!-- 4. Professional Experience -->
+<div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-orange-100">
+    <!-- Main Content (Always Visible) -->
+    <div class="flex justify-between items-start mb-3">
+        <div class="flex-1">
+            <h4 class="text-xl font-bold text-gray-800 mb-1">Professional Experience</h4>
+            <h5 class="text-lg font-semibold text-primary">Software Engineer Intern</h5>
+        </div>
+        <span class="text-gray-500 text-xs bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap ml-4">Fall 2024</span>
+    </div>
+    
+    <div class="flex items-center space-x-2 text-gray-600 text-xs mb-3">
+        <i class="fas fa-building text-orange-500"></i>
+        <a href="https://tcs.ut.ac.ir/" target="_blank" class="text-primary hover:text-secondary transition-colors font-semibold">
+            University of Tehran General Department of Skill
+        </a>
+    </div>
+
+    <p class="text-gray-700 leading-relaxed text-sm mb-4">
+        Co-developed a <strong>digital parking management system</strong> that automates vehicle tracking and fee collection for a 100-space parking facility.
+    </p>
+
+    <!-- Expandable Details -->
+    <div class="experience-details hidden" id="exp4-details">
+        <div class="border-t border-orange-200 pt-4 mt-4 space-y-4">
+            <!-- Project Overview -->
+            <div class="bg-white/70 rounded-xl p-5">
+                <h6 class="font-bold text-gray-800 mb-3 flex items-center">
+                    <i class="fas fa-project-diagram text-orange-500 mr-2"></i>
+                    Project Overview:
+                </h6>
+                <p class="text-gray-700 leading-relaxed text-sm">
+                    The system monitors vehicles entering and exiting in real-time, automatically calculates parking fees based on customer type (VIP, Normal, or Daily), and maintains searchable records of all transactions.
+                </p>
+            </div>
+
+            <!-- Technical Stack & Skills -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-4 border border-blue-100">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-code text-blue-500 mr-2"></i>
+                        Technical Stack:
+                    </h6>
+                    <ul class="space-y-1 text-gray-700 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                            <span>Built with <strong>C++/Qt Framework</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                            <span>Database integration & Excel export</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 rounded-xl p-4 border border-green-100">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-chart-line text-green-500 mr-2"></i>
+                        Skills Developed:
+                    </h6>
+                    <p class="text-gray-700 text-sm">Enhanced skills in <strong>software development</strong>, <strong>database design</strong>, and <strong>concurrent programming</strong></p>
+                </div>
+            </div>
+
+            <!-- Project Link -->
+            <div class="pt-3 border-t border-gray-200">
+                <a href="https://github.com/soheilraeiss/Parking-Management-System" 
+                   target="_blank"
+                   class="inline-flex items-center px-4 py-2 bg-white hover:bg-orange-50 rounded-lg text-orange-600 hover:text-orange-700 font-semibold transition-all border border-orange-200 group">
+                    <i class="fab fa-github mr-2 group-hover:scale-110 transition-transform"></i>
+                    View Project on GitHub
+                    <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button onclick="toggleExperience('exp4')" 
+            class="mt-4 w-full flex items-center justify-center space-x-2 px-4 py-2 bg-white hover:bg-orange-50 rounded-lg text-primary hover:text-secondary font-semibold transition-all border border-orange-200 group">
+        <span class="exp4-toggle-text">Show More Details</span>
+        <i class="fas fa-chevron-down exp4-toggle-icon transition-transform group-hover:translate-y-1"></i>
+    </button>
+</div>
+<!-- 5. Volunteer Activities -->
+<div class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-pink-100">
+    <!-- Main Content (Always Visible) -->
+    <div class="flex justify-between items-start mb-3">
+        <div class="flex-1">
+            <h4 class="text-xl font-bold text-gray-800 mb-1">Volunteer Activities</h4>
+            <h5 class="text-lg font-semibold text-primary">New Student Welcome Program Volunteer</h5>
+        </div>
+        <span class="text-gray-500 text-xs bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap ml-4">Academic Year 2024-2025</span>
+    </div>
+    
+    <div class="flex items-center space-x-2 text-gray-600 text-xs mb-3">
+        <i class="fas fa-university text-pink-500"></i>
+        <a href="https://ut.ac.ir/en" target="_blank" class="text-primary hover:text-secondary transition-colors font-semibold">
+            University of Tehran
+        </a>
+    </div>
+
+    <p class="text-gray-700 leading-relaxed text-sm mb-4">
+        Volunteered in a special and large-scale program organized by the University of Tehran to welcome new students at the start of the academic year, contributing time and enthusiasm to help create memorable and meaningful moments for incoming students.
+    </p>
+
+    <!-- Expandable Details -->
+    <div class="experience-details hidden" id="exp5-details">
+        <div class="border-t border-pink-200 pt-4 mt-4 space-y-4">
+            <!-- Responsibilities & Activities -->
+            <div class="bg-white/70 rounded-xl p-5">
+                <h6 class="font-bold text-gray-800 mb-3 flex items-center">
+                    <i class="fas fa-tasks text-pink-500 mr-2"></i>
+                    Key Responsibilities & Activities:
+                </h6>
+                <ul class="space-y-2 text-gray-700 text-sm">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                        <span><strong>Event Planning & Organization</strong> — Assisted in planning and organizing welcome events, ensuring all activities ran smoothly and on schedule</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                        <span><strong>Coordination & Management</strong> — Supported the coordination and management of various activities, working closely with team members to maintain efficient operations</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                        <span><strong>Student Guidance & Support</strong> — Provided direct guidance and assistance to new students, helping them navigate campus facilities, answer questions, and feel welcomed</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-primary mt-1 mr-2 flex-shrink-0"></i>
+                        <span><strong>Logistical & Operational Support</strong> — Contributed to logistical and operational support throughout the program, ensuring resources were properly distributed and venues were well-prepared</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Impact & Skills -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-4 border border-blue-100">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-heart text-blue-500 mr-2"></i>
+                        Impact & Achievement:
+                    </h6>
+                    <p class="text-gray-700 text-sm">Successfully helped hundreds of new students feel welcomed and supported during their first days at the University of Tehran, making their transition to university life smoother and more enjoyable</p>
+                </div>
+                <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 border border-yellow-100">
+                    <h6 class="font-bold text-gray-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-award text-yellow-500 mr-2"></i>
+                        Recognition:
+                    </h6>
+                    <p class="text-gray-700 text-sm">Received an official <strong>Certificate of Participation</strong> from the University of Tehran in recognition of volunteer contributions</p>
+                </div>
+            </div>
+
+            <!-- Skills Developed -->
+            <div class="bg-green-50 rounded-xl p-5 border border-green-100">
+                <h6 class="font-bold text-gray-800 mb-3 flex items-center">
+                    <i class="fas fa-chart-line text-green-500 mr-2"></i>
+                    Skills & Experience Gained:
+                </h6>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Event Management</span>
+                    <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Leadership & Teamwork</span>
+                    <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Student Mentorship</span>
+                    <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Communication Skills</span>
+                    <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Logistics Management</span>
+                    <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-green-200">Operations Coordination</span>
+                </div>
+            </div>
+
+            <!-- Related Links -->
+            <div class="pt-3 border-t border-gray-200">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="https://cultural.ut.ac.ir/AuthLog" 
+                       target="_blank"
+                       class="inline-flex items-center justify-center px-4 py-2 bg-white hover:bg-pink-50 rounded-lg text-pink-600 hover:text-pink-700 font-semibold transition-all border border-pink-200 group">
+                        <i class="fas fa-external-link-alt mr-2 group-hover:scale-110 transition-transform"></i>
+                        UT Student Portal
+                        <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                    <a href="https://cultural.ut.ac.ir/" 
+                       target="_blank"
+                       class="inline-flex items-center justify-center px-4 py-2 bg-white hover:bg-purple-50 rounded-lg text-purple-600 hover:text-purple-700 font-semibold transition-all border border-purple-200 group">
+                        <i class="fas fa-university mr-2 group-hover:scale-110 transition-transform"></i>
+                        UT Cultural System
+                        <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button onclick="toggleExperience('exp5')" 
+            class="mt-4 w-full flex items-center justify-center space-x-2 px-4 py-2 bg-white hover:bg-pink-50 rounded-lg text-primary hover:text-secondary font-semibold transition-all border border-pink-200 group">
+        <span class="exp5-toggle-text">Show More Details</span>
+        <i class="fas fa-chevron-down exp5-toggle-icon transition-transform group-hover:translate-y-1"></i>
+    </button>
+</div>
+    </div>
+</div>
 <!-- Relevant Coursework -->
 <div class="mb-16">
     <h3 class="section-title">Relevant Coursework</h3>
@@ -1109,6 +1363,25 @@
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         }
+
+        // **ADD THIS NEW FUNCTION HERE** ⬇️⬇️⬇️
+        // Toggle Experience Details Function
+        function toggleExperience(expId) {
+            const details = document.getElementById(expId + '-details');
+            const toggleText = document.querySelector('.' + expId + '-toggle-text');
+            const toggleIcon = document.querySelector('.' + expId + '-toggle-icon');
+            
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                toggleText.textContent = 'Show Less';
+                toggleIcon.classList.add('rotate-180');
+            } else {
+                details.classList.add('hidden');
+                toggleText.textContent = 'Show More Details';
+                toggleIcon.classList.remove('rotate-180');
+            }
+        }
+        // **END OF NEW FUNCTION** ⬆️⬆️⬆️
 
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
