@@ -277,42 +277,37 @@
     </nav>
 
 <!-- Hero Section -->
-<section id="home" class="hero-bg min-h-screen flex items-center" style="background-image: url('https://i.ibb.co/DPjDXs8C/IMG-20251129-191755.jpg'); background-size: cover; background-position: center top; background-attachment: fixed;">
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<section id="home" class="hero-bg min-h-screen flex items-center relative" style="background-image: url('https://i.ibb.co/DPjDXs8C/IMG-20251129-191755.jpg'); background-size: cover; background-position: center top; background-attachment: fixed;">
+    <!-- Gradient overlay (dark at top, transparent middle, dark at bottom) -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/70"></div>
+    
+    <!-- Additional center gradient for text area -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-black/60 to-black/40"></div>
+    
     <div class="container mx-auto px-4 text-center relative z-10">
-        <!-- Name with semi-transparent background -->
-        <div class="inline-block bg-black/40 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8">
-            <h1 class="text-4xl md:text-6xl font-bold text-white">Seyed Soheil Raeisossadati</h1>
-        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">Seyed Soheil Raeisossadati</h1>
         
-        <!-- Text boxes with background -->
-        <div class="max-w-2xl mx-auto space-y-4">
-            <div class="bg-black/30 backdrop-blur-sm px-6 py-3 rounded-xl inline-block">
-                <p class="text-xl md:text-2xl text-white">
-                    Computer Science & Music Student @ 
-                    <a href="https://english.spbu.ru/representative-office-tehran-university" 
-                       target="_blank" 
-                       class="underline hover:text-blue-300 transition-colors font-semibold">UT</a>
-                </p>
-            </div>
+        <div class="max-w-2xl mx-auto">
+            <p class="text-xl md:text-2xl mb-3 text-white font-medium bg-gradient-to-r from-blue-900/30 to-purple-900/30 py-2 px-4 rounded-lg">
+                Computer Science & Music Student @ 
+                <a href="https://english.spbu.ru/representative-office-tehran-university" 
+                   target="_blank" 
+                   class="underline hover:text-blue-300 transition-colors font-semibold">UT</a>
+            </p>
             
-            <div class="bg-black/30 backdrop-blur-sm px-6 py-3 rounded-xl inline-block">
-                <p class="text-xl md:text-2xl text-white">
-                    Generative Music Researcher @ 
-                    <a href="https://munichmusiclabs.com/" 
-                       target="_blank" 
-                       class="underline hover:text-blue-300 transition-colors font-semibold">MML</a>
-                </p>
-            </div>
+            <p class="text-xl md:text-2xl mb-8 text-white font-medium bg-gradient-to-r from-purple-900/30 to-blue-900/30 py-2 px-4 rounded-lg">
+                Generative Music Researcher @ 
+                <a href="https://munichmusiclabs.com/" 
+                   target="_blank" 
+                   class="underline hover:text-purple-300 transition-colors font-semibold">MML</a>
+            </p>
         </div>
         
-        <div class="flex justify-center space-x-4 mt-8">
-            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full transition text-white font-semibold shadow-lg">Contact Me</a>
-            <a href="#projects" class="bg-white/20 hover:bg-white/40 backdrop-blur-sm border-2 border-white/30 px-8 py-3 rounded-full transition text-white font-semibold shadow-lg">View Projects</a>
+        <div class="flex justify-center space-x-4">
+            <a href="#contact" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 px-8 py-3 rounded-full transition text-white font-semibold shadow-xl">Contact Me</a>
         </div>
     </div>
 </section>
-
     <!-- About Section -->
     <section id="about" class="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-4 fade-in">
