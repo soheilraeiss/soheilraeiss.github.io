@@ -277,37 +277,29 @@
     </nav>
 
 <!-- Hero Section -->
-<section id="home" class="hero-bg min-h-screen flex items-center relative" style="background-image: url('https://i.ibb.co/DPjDXs8C/IMG-20251129-191755.jpg'); background-size: cover; background-position: center top; background-attachment: fixed;">
-    <!-- Gradient overlay (dark at top, transparent middle, dark at bottom) -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/70"></div>
-    
-    <!-- Additional center gradient for text area -->
-    <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-black/60 to-black/40"></div>
-    
+<section id="home" class="hero-bg min-h-screen flex items-center" style="background-image: url('https://i.ibb.co/DPjDXs8C/IMG-20251129-191755.jpg'); background-size: cover; background-position: center top; background-attachment: fixed;">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div> <!-- Increased to 60% -->
     <div class="container mx-auto px-4 text-center relative z-10">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">Seyed Soheil Raeisossadati</h1>
-        
-        <div class="max-w-2xl mx-auto">
-            <p class="text-xl md:text-2xl mb-3 text-white font-medium bg-gradient-to-r from-blue-900/30 to-purple-900/30 py-2 px-4 rounded-lg">
-                Computer Science & Music Student @ 
-                <a href="https://english.spbu.ru/representative-office-tehran-university" 
-                   target="_blank" 
-                   class="underline hover:text-blue-300 transition-colors font-semibold">UT</a>
-            </p>
-            
-            <p class="text-xl md:text-2xl mb-8 text-white font-medium bg-gradient-to-r from-purple-900/30 to-blue-900/30 py-2 px-4 rounded-lg">
-                Generative Music Researcher @ 
-                <a href="https://munichmusiclabs.com/" 
-                   target="_blank" 
-                   class="underline hover:text-purple-300 transition-colors font-semibold">MML</a>
-            </p>
-        </div>
-        
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white [text-shadow:_0_2px_8px_rgba(0,0,0,0.8)]">Seyed Soheil Raeisossadati</h1>
+        <p class="text-xl md:text-2xl text-white mb-2 [text-shadow:_0_1px_4px_rgba(0,0,0,0.7)]">
+            Computer Science & Music Student @ 
+            <a href="https://english.spbu.ru/representative-office-tehran-university" 
+               target="_blank" 
+               class="underline hover:text-blue-300 transition-colors font-semibold">UT</a>
+        </p>
+        <p class="text-xl md:text-2xl mb-8 text-white [text-shadow:_0_1px_4px_rgba(0,0,0,0.7)]">
+            Generative Music Researcher @ 
+            <a href="https://munichmusiclabs.com/" 
+               target="_blank" 
+               class="underline hover:text-blue-300 transition-colors font-semibold">MML</a>
+        </p>
         <div class="flex justify-center space-x-4">
-            <a href="#contact" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 px-8 py-3 rounded-full transition text-white font-semibold shadow-xl">Contact Me</a>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full transition text-white font-semibold shadow-lg">Contact Me</a>
+            <a href="#projects" class="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full transition text-white font-semibold shadow-lg">View Projects</a>
         </div>
     </div>
 </section>
+    
     <!-- About Section -->
     <section id="about" class="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-4 fade-in">
